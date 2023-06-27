@@ -1,0 +1,67 @@
+.textlogin {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff7400;
+  margin-bottom: 50px;
+}
+.formbg {
+  background-color: #b7b7b7;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+#formbg {
+  justify-content: center;
+  background-color: #d9d9d9;
+  width: 400px;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+#formbg2 {
+  justify-content: center;
+  background-color: #d9d9d9;
+  width: 500px;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.formaligment {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.buttonSend:hover {
+  background-color: #00b972;
+}
+.buttonSend {
+  justify-content: center;
+  background-color: #25ff62;
+  border-radius: 20px;
+  width: 37%;
+  padding: 10px 10px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.btnCenter {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.input2 {
+  width: 100%;
+}
+
+/* .kolom {
+  display: flex;
+  justify-content: space-between ;
+} */

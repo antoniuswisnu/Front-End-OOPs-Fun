@@ -1,0 +1,50 @@
+/* .container2 {
+  border: 1px solid black;
+} */
+
+.level {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  box-sizing: border-box;
+  width: 40%;
+  height: 150px;
+}
+
+.pp {
+  float: left;
+  margin-right: 20px;
+  margin-top: 25px;
+  margin-left: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.level-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #686868;
+  margin-left: 20px;
+  padding-top: 25px;
+}
+
+h4 {
+  font-size: 10px;
+  font-weight: bold;
+  color: #686868;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.progress {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.footer {
+  font-size: 10px;
+  font-weight: bold;
+  color: #686868;
+  display: inline;
+}

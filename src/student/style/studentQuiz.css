@@ -1,0 +1,146 @@
+.quiz-app {
+  padding: 150px;
+  margin-top: 80px;
+  background-color: #ffffff;
+  color: #f47303;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.score-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.question-section {
+  margin-bottom: 100px;
+}
+
+.timer-bar {
+  height: 15px;
+  background-color: #f47303;
+  transition: width 1s linear;
+}
+
+.options-section {
+  display: grid;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f5f5f5;
+  color: #f47303;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.option-button:hover {
+  background-color: #f47303;
+  color: #ffffff;
+  box-shadow: 0 0 5px #f47303, 0 0 5px #f47303, 0 0 20px #f47303, 0 0 20px #f47303;
+}
+
+.navigation-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nav-button {
+  margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .options-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: ($size - $thickness) / 2;
+    left: 0;
+    right: 0;
+    height: $thickness;
+    background: $color;
+    border-radius: $thickness;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.btn-close {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: hsl(216, 100, 50);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+
+  .icon-cross {
+    @include cross(40px, #fff, 6px);
+  }
+
+  &:hover,
+  &:focus {
+    transform: rotateZ(90deg);
+    background: hsl(216, 100, 40);
+  }
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffaf02;
+  margin-bottom: 20px;
+}
+
+.quiz-question {
+  font-size: 30px;
+  font-weight: bold;
+  color: #686868;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,33 @@
+.container-student-class {
+  margin: 5px auto;
+  width: 60%;
+}
+
+.btn-music {
+  background-color: white;
+  margin-left: 1000px;
+  border-radius: 15%;
+  border: none;
+  box-shadow: 0 0 2px #f47303, 0 0 2px #f47303, 0 0 2px #f47303, 0 0 2px #f47303;
+}
+
+.btn-music:hover {
+  background-color: #f47303;
+  box-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
+}
+
+.img-music {
+  width: 40px;
+  height: 30px;
+}
+
+.btn-music:focus {
+  outline: none;
+}
+
+.card-student-quiz {
+  border-radius: 20px;
+  transition: 0.5s;
+  display: flex;
+  padding: 30px;
+}

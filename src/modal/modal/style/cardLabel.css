@@ -1,0 +1,52 @@
+.card-body-class {
+  width: 80%;
+}
+
+.label-card-class {
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.header-card-class {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: orange;
+  color: #ffffff;
+}
+
+.btn-start-class {
+  background-color: #ff9a00;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-enter-class {
+  background-color: #3e52ff;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-enter-class:hover {
+  background-color: orange;
+  color: #ffffff;
+}
+
+.btn-delete-class2 {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.text-card-class {
+  font-size: 10px;
+  font-weight: bold;
+  color: #686868;
+}

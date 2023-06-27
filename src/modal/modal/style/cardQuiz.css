@@ -1,0 +1,43 @@
+.card-body-quiz {
+  width: 80%;
+  height: 120px;
+}
+
+.label-card-quiz {
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.header-card-quiz {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: orange;
+  color: #ffffff;
+}
+
+.btn-start-quiz {
+  background-color: #ff9a00;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-delete-quiz {
+  background-color: #ff2424;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  border: none;
+}
+
+.text-card-quiz {
+  font-size: 10px;
+  font-weight: bold;
+  color: #686868;
+}

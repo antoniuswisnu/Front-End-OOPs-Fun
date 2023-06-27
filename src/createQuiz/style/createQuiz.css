@@ -1,0 +1,157 @@
+* > * {
+  font-family: "Metropolis";
+  margin: 0;
+}
+
+.container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  /* padding: 40px 20px; */
+}
+
+.garis2 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+form textarea {
+  height: 120px;
+}
+
+form button {
+  margin-top: 10px;
+}
+
+.card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.list-group-item {
+  border: none;
+  font-size: 12px;
+}
+
+.btn-secondary,
+.btn-danger {
+  border: none;
+}
+
+.close2 {
+  margin-bottom: -30px;
+}
+
+.judul {
+  font-family: "Metropolis";
+  font-size: 24px;
+  font-weight: 900;
+  color: #ff9a00;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.judul-add-question {
+  font-family: "Metropolis";
+  font-size: 24px;
+  font-weight: 900;
+  color: #ff9a00;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.soal-container {
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 70%;
+}
+
+.form-soal {
+  background-color: #ff9a00;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+.btn-submit {
+  background-color: #ff9a00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  flex-direction: row-reverse;
+}
+
+.btn-batal {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.btn-batal:hover {
+  background-color: #00000033;
+  color: #ffffff;
+}
+
+.button-container {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .pertanyaan-container{
+  float: left;
+} */
+
+.btn-add-question2 {
+  background-color: #ff9a00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.pilihan-jawaban {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.right-choices {
+  font-size: 14px;
+  color: #212121;
+  font-weight: bold;
+  text-align: center;
+}
