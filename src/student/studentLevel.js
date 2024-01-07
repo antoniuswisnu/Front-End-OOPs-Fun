@@ -3,7 +3,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import "./style/studentLevel.css";
 import Foto from "./img/foto.png";
 
-function LevelBar() {
+function StudentLevel() {
   const [exp, setExp] = useState(0);
   const [level, setLevel] = useState(1);
   const sisaExp = 0;
@@ -28,4 +28,4 @@ function LevelBar() {
   );
 }
 
-export default LevelBar;
+export default StudentLevel;

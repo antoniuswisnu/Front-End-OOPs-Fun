@@ -1,0 +1,14 @@
+.tab:hover {
+  background-color: orange;
+  color: white;
+}
+
+.tab {
+  color: orange;
+}
+
+.active-tab {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}

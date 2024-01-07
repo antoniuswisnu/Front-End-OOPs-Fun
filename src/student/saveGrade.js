@@ -1,13 +1,11 @@
-import { useEffect, useLayoutEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import { useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SaveGrade = () => {
-  const nav = useNavigate();
+  useNavigate();
   useLayoutEffect(() => {
     const saveQuiz = async () => {
-      let result = await fetch("http://localhost:8080/student/search/grade", {
+      await fetch("http://localhost:8080/student/search/grade", {
         method: "post",
         body: JSON.stringify({ userID: JSON.parse(localStorage.getItem("user"))._id, quizID: JSON.parse(localStorage.getItem("keyQuiz")).keyQuiz, grade: JSON.parse(localStorage.getItem("grade")).grade }),
         headers: {

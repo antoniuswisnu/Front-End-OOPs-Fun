@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import SidebarStudent from "../sidebarStudent/sidebarStudent";
-import CardStudentQuiz from "../student/cardStudentQuiz";
-import Table from "react-bootstrap/Table";
+import SidebarStudent from "../sidebar/SidebarStudent";
+import CardStudentQuiz from "../modal/cardStudentQuiz";
 import Sound from "react-sound";
 import soundfile from "./sound/sound.mp3";
 import music from "./img/music.png";
 import "./style/studentClass.css";
-import StudentLevel from "./studentLevel";
+import StudentLevel from "./StudentLevel";
 
 function StudentClass(handleSoundLoading, handleSoundPlaying, handleSongFinishedPlaying) {
   const auth = localStorage.getItem("user");
@@ -34,7 +33,7 @@ function StudentClass(handleSoundLoading, handleSoundPlaying, handleSongFinished
     localStorage.removeItem("grade");
 
     const getData = async () => {
-      let result = await fetch("http://localhost:8080/teacher/class/quiz", {
+      await fetch("http://localhost:8080/teacher/class/quiz", {
         method: "post",
         body: JSON.stringify({ key: JSON.parse(auth).class }),
         headers: {

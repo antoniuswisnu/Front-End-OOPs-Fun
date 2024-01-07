@@ -4,7 +4,7 @@ import { Navigate, Outlet } from "react-router-dom";
 
 const UserComponents = () => {
     const auth = localStorage.getItem('user');
-    let auth2 = JSON.parse(auth);
+    JSON.parse(auth);
     return auth ?<Outlet />:<Navigate to="/" />
 }
 

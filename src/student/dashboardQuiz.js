@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Text, Button, Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "./style/dashboardQuiz.css";
 
@@ -11,7 +11,7 @@ const DashboardQuiz = () => {
     localStorage.removeItem("Questions");
 
     const getQuestionsFromAPI = async () => {
-      let result = await fetch("http://localhost:8080/student/class/quiz/started", {
+      await fetch("http://localhost:8080/student/class/quiz/started", {
         method: "post",
         body: JSON.stringify({ key: JSON.parse(localStorage.getItem("keyQuiz")).keyQuiz }),
         headers: {
@@ -33,7 +33,7 @@ const DashboardQuiz = () => {
     getQuestionsFromAPI();
 
     const getGrading = async () => {
-      let result = await fetch("http://localhost:8080/student/search/thequiz", {
+      await fetch("http://localhost:8080/student/search/thequiz", {
         method: "post",
         body: JSON.stringify({ userID: JSON.parse(localStorage.getItem("user"))._id, quizID: JSON.parse(localStorage.getItem("keyQuiz")).keyQuiz }),
         headers: {

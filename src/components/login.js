@@ -1,10 +1,10 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./style/register-login.css";
 
-const SignIn = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const nav = useNavigate();
@@ -29,7 +29,7 @@ const SignIn = () => {
       });
     if (result.email) {
       localStorage.setItem("user", JSON.stringify(result));
-      if (result.roles == "teacher") {
+      if (result.roles === "teacher") {
         nav("/dashboard/create-class");
       } else {
         nav("/student/inputtoken/");
@@ -85,4 +85,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Login;

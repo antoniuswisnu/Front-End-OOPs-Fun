@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import "./style/studentQuiz.css";
 import { useNavigate } from "react-router-dom";
 
-const QuizApp = () => {
+const StudentQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [rightAnswers, setRightAnswers] = useState(0);
@@ -122,4 +122,4 @@ const QuizApp = () => {
   );
 };
 
-export default QuizApp;
+export default StudentQuiz;

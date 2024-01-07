@@ -1,10 +1,10 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
 import "./style/register-login.css";
 
-const SignUp = () => {
+const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +19,7 @@ const SignUp = () => {
   });
 
   const collectData = async () => {
-    if (password == password2) {
+    if (password === password2) {
       let result = await fetch("http://127.0.0.1:8080/register", {
         method: "post",
         body: JSON.stringify({ name, email, password, roles }),
@@ -111,4 +111,4 @@ const SignUp = () => {
     </div>
   );
 };
-export default SignUp;
+export default Register;
