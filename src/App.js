@@ -3,8 +3,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Login from "./components/login";
+import Register from "./components/register";
 
 import UserComponents from "./components/UserComponents";
 import StudentComponents from "./components/StudentComponents";
@@ -22,10 +22,11 @@ import ListQuestion from "./teacher/class/ListQuestion";
 import ListGradeClass from "./teacher/class/ListGradeClass";
 import ListLabel from "./teacher/class/ListLabel";
 
-import DashboardQuiz from "./student/DashboardQuiz";
-import StudentClass from "./student/StudentClass";
-import StudentQuiz from "./student/StudentQuiz";
-import SaveGrade from "./student/SaveGrade";
+import DashboardQuiz from "./student/dashboardQuiz";
+import StudentClass from "./student/studentClass";
+import StudentQuiz from "./student/studentQuiz";
+import SaveGrade from "./student/saveGrade";
+
 
 import TeacherBoard from "./leaderboard/TeacherBoard";
 import StudentBoard from "./leaderboard/StudentBoard";

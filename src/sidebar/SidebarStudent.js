@@ -20,25 +20,27 @@ const SidebarStudent = () => {
 
       <hr></hr>
 
+      
+
       <ul>
         <a href="/student/class/">
           <li className="card-sidebar">
             <img className="imgItem" src={Learn} />
-            <p className="p-sidebar-quiz">Quiz</p>
+            Quiz
           </li>
         </a>
 
-        <a href="/student/class/leaderboard">
+        <a href="/student/class/leaderboard" >
           <li className="card-sidebar">
             <img className="imgItem" src={Leaderboard} />
-            <p className="p-sidebar leaderboard">Leaderboard</p>
+            Leaderboard
           </li>
         </a>
 
         <a onClick={logout}>
-          <li className="card-sidebar">
+          <li className="card-sidebar"id="lead" >
             <img className="imgItem" src={LogOut} />
-            <p className="p-sidebar-logout">Log Out</p>
+            Log Out
           </li>
         </a>
       </ul>

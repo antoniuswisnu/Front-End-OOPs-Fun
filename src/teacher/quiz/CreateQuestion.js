@@ -74,6 +74,7 @@ function CreateQuestion() {
       .then((response) => response.json())
       .then((response) => {
         alert("Berhasil menambah pertanyaan!");
+        window.location.reload();
         return response;
       });
 

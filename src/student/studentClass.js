@@ -8,7 +8,7 @@ import Sound from "react-sound";
 import soundfile from "./sound/sound.mp3";
 import music from "./img/music.png";
 import "./style/studentClass.css";
-import StudentLevel from "./StudentLevel";
+import StudentLevel from "./studentLevel";
 
 function StudentClass(handleSoundLoading, handleSoundPlaying, handleSongFinishedPlaying) {
   const auth = localStorage.getItem("user");
@@ -98,7 +98,7 @@ function StudentClass(handleSoundLoading, handleSoundPlaying, handleSongFinished
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={postQuiz}>
+            <Button type="submit" variant="primary" onClick={postQuiz}>
               Save Changes
             </Button>
           </Modal.Footer>

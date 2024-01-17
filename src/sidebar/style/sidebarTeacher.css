@@ -6,7 +6,6 @@
   width: 250px;
   background-color: #fef8f5;
   padding: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .sidebar ul {
@@ -20,18 +19,18 @@
 
 .imgItem {
   width: 40px;
-  height: 30px;
+  height: 40px;
   margin: 10px;
-}
-
-.imgItem-leaderboard {
 }
 
 .sidebar li {
   background-color: #ffffff;
+  color: #686868 ;
   height: 60px;
   margin-top: 20px;
   border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
   list-style: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -54,6 +53,8 @@
   margin-top: 20px;
 }
 
+
+
 .sidebar .imgItem {
   margin-top: 10px;
   margin-left: 20px;
@@ -66,10 +67,18 @@
 .p-sidebar-logout {
   padding-left: 20px;
 }
-
-.item-sidebar:hover {
+.card-sidebar:hover {
   background-color: #ffcc6a;
+  color: #ffffff;
+}
 
+#lead:hover {
+  background-color: #ffcc6a;
+  color: #ffffff;
+}
+
+
+.p-sidebar:hover {
   color: #ffffff;
 }
 

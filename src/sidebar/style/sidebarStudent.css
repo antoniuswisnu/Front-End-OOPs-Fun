@@ -24,9 +24,12 @@
 
 .sidebar li {
   background-color: #ffffff;
+  color: #686868 ;
   height: 60px;
   margin-top: 20px;
   border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
   list-style: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -67,6 +70,12 @@
   background-color: #ffcc6a;
   color: #ffffff;
 }
+
+#lead:hover {
+  background-color: #ffcc6a;
+  color: #ffffff;
+}
+
 
 .p-sidebar:hover {
   color: #ffffff;

@@ -54,11 +54,11 @@ const TokenStudent = () => {
       </div>
 
       <div className="">
-        <button type="button" className="btn btn-primary" onClick={submit}>
+        <button type="submit" className="btn btn-primary" onClick={submit}>
           Submit
         </button>
 
-        <button type="button" className="btn btn-danger ms-3" onClick={logout}>
+        <button type="submit" className="btn btn-danger ms-3" onClick={logout}>
           Cancel
         </button>
       </div>
