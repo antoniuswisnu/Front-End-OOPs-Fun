@@ -1,13 +1,11 @@
-/* .container2 {
-  border: 1px solid black;
-} */
+
 
 .level {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #ffffff;
   border-radius: 35px;
   box-sizing: border-box;
-  width: 40%;
+  width: 700px;
   height: 150px;
 }
 

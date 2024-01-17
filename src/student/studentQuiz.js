@@ -83,13 +83,13 @@ const StudentQuiz = () => {
             <p>Wrong Answers: {wrongAnswers}</p>
             <p>Experience: {usr.experience}</p>
             <p>Level: {usr.level}</p>
-            {/* <Button onClick={restartQuiz}>Restart Quiz</Button> */}
-            {/* <Button onClick={saveQuiz()}>Done</Button> */}
-            <div className="hidden">
+            {/* <Button id="btn-rest" onClick={restartQuiz}>Restart Quiz</Button> */}
+            <Button id="btn-done-save"onClick={saveQuiz}>Done</Button>
+            {/* <div className="hidden">
               {setTimeout(() => {
                 saveQuiz();
               }, 5000)}
-            </div>
+            </div> */}
           </div>
         </>
       ) : (
