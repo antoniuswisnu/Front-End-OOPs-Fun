@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Profiles from "./StudentProfile";
+import Profiles from "./Profile";
 import "./style/studentLeaderboard.css";
 import SidebarStudent from "../sidebar/SidebarStudent";
 
 export default function StudentBoard() {
-  const [period, setPeriod] = useState(0);
+  const [period] = useState(0);
   const [Leaderboards, setLeaderboards] = useState([]);
 
   let Leaderboard = Leaderboards;
-
-  const handleClick = (e) => {
-    setPeriod(e.target.dataset.id);
-  };
 
   useEffect(() => {
     const filterData = async (e) => {
@@ -42,7 +38,7 @@ export default function StudentBoard() {
       <SidebarStudent />
       <div className="container board">
         <h1 className="judul mt-5">Leaderboard</h1>
-        <hr></hr>
+        <hr className="garis-kelas"></hr>
         <Profiles Leaderboard={between(Leaderboard, period)}></Profiles>
       </div>
     </div>

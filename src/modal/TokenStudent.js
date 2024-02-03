@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./style/tokenStudent.css";
 
 const TokenStudent = () => {
   const auth = localStorage.getItem("user");

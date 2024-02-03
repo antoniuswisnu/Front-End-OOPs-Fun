@@ -1,18 +1,4 @@
-/* @import "@fontsource/metropolis"; */
 
-* > * {
-  font-family: "Metropolis";
-  margin: 0;
-}
-
-:root {
-  --color-dark: #2c3131;
-  --color-light: #f3f3f2;
-}
-
-body {
-  background-color: #fafafa;
-}
 
 #main {
   display: flex;
