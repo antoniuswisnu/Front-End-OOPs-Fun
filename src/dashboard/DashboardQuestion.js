@@ -86,7 +86,7 @@ const DashboardQuestion = () => {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={postLabel}>
+            <Button type="submit" variant="primary" onClick={postLabel}>
               Save Changes
             </Button>
           </Modal.Footer>

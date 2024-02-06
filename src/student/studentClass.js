@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
 import SidebarStudent from "../sidebar/SidebarStudent";
 import CardStudentQuiz from "../modal/cardStudentQuiz";
 import Sound from "react-sound";
 import soundfile from "./sound/sound.mp3";
 import music from "./img/music.png";
 import "./style/studentClass.css";
-import StudentLevel from "./StudentLevel";
+import StudentLevel from "./studentLevel";
 
 function StudentClass(handleSoundLoading, handleSoundPlaying, handleSongFinishedPlaying) {
   const auth = localStorage.getItem("user");
@@ -75,34 +72,12 @@ function StudentClass(handleSoundLoading, handleSoundPlaying, handleSongFinished
   }
 
   return (
-    <div className="container2 mt-5">
+    <div className="container mt-5">
       <SidebarStudent />
 
       <StudentLevel value={value} max={max} height={height} color={color} />
-      <div className="container-student-class">
-        <div className="container mt-3"></div>
 
-        <Modal className="mt-5" show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Create a Quiz</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Form>
-              <Form.Group className="mb-3" controlId="">
-                <Form.Label>Quiz Name</Form.Label>
-                <Form.Control value={quiz} onChange={(e) => setQuiz(e.target.value)} type="text" placeholder="" autoFocus />
-              </Form.Group>
-            </Form>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={postQuiz}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
+      <div className="container-student-class">
 
         <div className="card-student-quiz">{items}</div>
 
@@ -110,16 +85,21 @@ function StudentClass(handleSoundLoading, handleSoundPlaying, handleSongFinished
           <Sound
             url={soundfile}
             playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
-            playFromPosition={300 /* in milliseconds */}
+            playFromPosition={300}
             onLoading={handleSoundLoading}
             onPlaying={handleSoundPlaying}
             onFinishedPlaying={handleSongFinishedPlaying}
           />
         </div>
+
+        <button className="btn-music">
+          <img className="img-music" src={music} onClick={() => setIsPlaying(!isPlaying)} />
+         </button>
+
       </div>
-      <button className="btn-music">
-        <img className="img-music" src={music} onClick={() => setIsPlaying(!isPlaying)} />
-      </button>
+
+      
+
     </div>
   );
 }

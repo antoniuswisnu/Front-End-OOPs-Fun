@@ -23,30 +23,30 @@ const SidebarTeacher = () => {
 
       <ul>
         <a href="/">
-          <li className="item-sidebar">
+          <li className="card-sidebar">
             <img className="imgItem" src={Dashboard} />
-            <p className="p-sidebar-dashboard">Dashboard</p>
+           Dashboard
           </li>
         </a>
 
         <a href="/teacher/class/quiz">
-          <li className="item-sidebar">
+          <li className="card-sidebar">
             <img className="imgItem" src={Learn} />
-            <p className="p-sidebar-quiz">Quiz</p>
+           Quiz
           </li>
         </a>
 
         <a href="/teacher/class/leaderboard">
-          <li className="item-sidebar">
+          <li className="card-sidebar">
             <img className="imgItem" src={Leaderboard} />
-            <p className="p-sidebar-leaderboard">Leaderboard</p>
+          Leaderboard
           </li>
         </a>
 
         <a onClick={logout}>
-          <li className="item-sidebar">
+          <li className="card-sidebar">
             <img className="imgItem" src={Logout} />
-            <p className="p-sidebar-logout">Log Out</p>
+          Log Out
           </li>
         </a>
       </ul>
