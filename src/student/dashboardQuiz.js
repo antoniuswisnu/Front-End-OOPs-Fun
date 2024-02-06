@@ -52,7 +52,6 @@ const DashboardQuiz = () => {
   }, []);
 
   const StartQuiz = () => {
-    // console.warn((QuestionList));
     localStorage.setItem("Questions", JSON.stringify(QuestionList));
     nav("/student/class/quiz/started/");
   };
@@ -60,7 +59,7 @@ const DashboardQuiz = () => {
   return (
     <>
       <div className="dashboardQuiz">
-        <div className="close">
+        <div className="close3">
           <Link to="/student/class">
             <button type="button" class="btn-close">
               <span class="icon-cross"></span>
@@ -70,41 +69,43 @@ const DashboardQuiz = () => {
         </div>
 
         <div className="container mt-5 history">
-          <h1>Peraturan Pengerjaan Quiz</h1>
+          <h1>Quiz Rules</h1>
           <hr></hr>
           <ol>
-            <li>Quiz ini terdiri dari {QuestionList.length} soal</li>
-            <li>Peserta diharapkan untuk menjawab pertanyaan dengan jujur tanpa menggunakan bantuan pihak lain atau mencari jawaban di luar sumber daya yang diperbolehkan.</li>
-            <li>Dilarang keras menggunakan bantuan dari teman, buku, atau sumber lainnya yang tidak diperbolehkan oleh pengajar.</li>
-            <li>Peserta harus menyelesaikan quiz dalam waktu yang ditentukan. Jika ada batasan waktu, peserta harus mematuhi waktu yang telah ditetapkan.</li>
-            <li>Peserta dilarang membagikan atau mengunggah jawaban, soal, atau informasi apapun terkait quiz kecuali diperbolehkan oleh pengajar.</li>
-            <li>Tidak diperkenankan mengirimkan jawaban kepada peserta lain atau mengungkapkan jawaban kepada mereka sebelum quiz selesai.</li>
+            <li>This quiz consists of {QuestionList.length} questions</li>
+            <li>Participants are expected to answer questions honestly without using the help of other parties or seeking answers outside the permitted resources.</li>
+            <li>It is strictly forbidden to use help from friends, books, or other sources that are not permitted by the teacher.</li>
+            <li>Participants must complete the quiz within the specified time. If there is a time limit, participants must adhere to the specified time.</li>
+            <li>Participants are prohibited from sharing or uploading answers, questions, or any information related to the quiz unless permitted by the instructor.</li>
           </ol>
 
-          <Button className="mt-5 btn-start" onClick={() => StartQuiz()}>
+          <Button className="mt-1 mb-1 btn-start" onClick={() => StartQuiz()}>
             Start Quiz
           </Button>
         </div>
 
-        <div className="container mt-5 grid-container">
+        <div className="container mt-3 grid-container">
           <div className="history grid-item">
             <h1>
-              Attempt <h3 id="attempt">0</h3>
+              Attempt 
+              <hr className="garis-history"></hr>
+              <h3 id="attempt">0</h3>
             </h1>
           </div>
 
           <div className="history grid-item">
             <h1>
-              Last Grading <h3 id="lastGrading">0</h3>
+              Last Grading <hr className="garis-history"></hr> <h3 id="lastGrading">0</h3>
             </h1>
           </div>
 
           <div className="history grid-item">
             <h1>
-              First Grading <h3 id="firstGrading">0</h3>
+              First Grading <hr className="garis-history"></hr> <h3 id="firstGrading">0</h3>
             </h1>
           </div>
         </div>
+
       </div>
     </>
   );

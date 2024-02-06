@@ -69,7 +69,6 @@ const StudentQuiz = () => {
 
   const saveQuiz = async () => {
     localStorage.setItem("grade", JSON.stringify({ grade: (rightAnswers / quizData.length) * 100 }));
-
     nav("/student/class/quiz/started/saved/");
   };
 
@@ -83,9 +82,7 @@ const StudentQuiz = () => {
             <p>Wrong Answers: {wrongAnswers}</p>
             <p>Experience: {usr.experience}</p>
             <p>Level: {usr.level}</p>
-            {/* <Button id="btn-rest" onClick={restartQuiz}>Restart Quiz</Button> */}
             <Button id="btn-done-save"onClick={saveQuiz}>Done</Button>
-            {/* <div className="hidden">
               {setTimeout(() => {
                 saveQuiz();
               }, 5000)}
