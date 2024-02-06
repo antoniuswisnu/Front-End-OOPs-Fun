@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function StudentProfile({ Leaderboard }) {
+export default function Profile({ Leaderboard }) {
   return <div id="profile">{Item(Leaderboard)}</div>;
 }
 
@@ -18,7 +18,7 @@ function Item(data) {
             </div>
           </div>
           <div className="itemScore">
-            <span className="score">{Math.round(value.grade)}</span>
+            <h6 className="score">{Math.round(value.grade)}</h6>
           </div>
         </div>
       ))}

@@ -73,3 +73,27 @@
   font-weight: bold;
   border: none;
 }
+
+.btn-close2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+
+  .icon-cross {
+    @include cross(40px, #fff, 6px);
+  }
+
+  &:hover,
+  &:focus {
+    transform: rotateZ(90deg);
+    background: hsl(216, 100, 40);
+  }
+}

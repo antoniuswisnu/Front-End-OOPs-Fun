@@ -127,7 +127,7 @@ function CreateQuestion() {
 
   return (
     <div className="container">
-      <div className="close2">
+      <div className="close mt-3">
         <Link to="/dashboard/create-question">
           <button type="button" class="btn-close">
             <span class="icon-cross"></span>

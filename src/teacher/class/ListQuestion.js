@@ -78,6 +78,7 @@ function ListQuestion() {
 
   return (
     <div className="container">
+
       <div className="close-question-quiz">
         <Link to="/teacher/class/quiz">
           <button type="button" class="btn-close">
